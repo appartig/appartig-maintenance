@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title><?php echo $aamt_title; ?></title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<title><?php echo $aamt_title; ?></title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 
-	<style>
-		*{
-			padding: 0px;
-			border: 0px;
-			margin: 0px;
-			font-family: 'Open Sans', sans-serif;
-		}
-		
-		html, body{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			width: 100%;
-			height: 100%;
-			justify-content: center;
-			align-content: center;
-			align-items: center;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			padding: 30px;
-			overflow: auto;
-		}
-		
-		#content{
-			width: 100%;
-			max-width: 800px;
-			text-align: left;
-		}
-		
-		#content h1{
-			margin-bottom: 10px;
-		}
-		
-		#content h2{
-			margin-top: 40px;
-		}
-		
-		#content a{
-			text-decoration: none;
-			color: #d2232a;
-		}
-		
-	</style>
-	
-</head>
-<body>
-	<div id="content">
-		<h1><?php echo $aamt_title; ?></h1>
-		<p>Design, Entwicklung und Deployment von <a href="https://www.appartig.at" target="_blank">AppArtig e.U.</a></p>
-		
-		<h2>Wir führen gerade einen Relaunch von <?php echo $aamt_title; ?> durch. In dieser Zeit steht Ihnen die Seite nicht zur Verfügung. Versuchen Sie es bitte in ein paar Stunden noch einmal!</h2>
-	</div>
-</body>
+		<style>
+			* {
+				padding: 0px;
+				border: 0px;
+				margin: 0px;
+				font-family: "Open Sans", sans-serif;
+			}
+
+			html,
+			body {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 30px;
+				overflow: auto;
+			}
+
+			#content {
+				width: 100%;
+				max-width: 800px;
+				text-align: left;
+			}
+
+			#content h1 {
+				margin-bottom: 10px;
+			}
+
+			#content h2 {
+				margin-top: 40px;
+			}
+
+			#content a {
+				text-decoration: none;
+				color: #d2232a;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1><?php echo $aamt_title; ?></h1>
+			<p>
+				Design, Entwicklung und Deployment von
+				<a href="https://www.appartig.at" target="_blank">AppArtig e.U.</a>
+			</p>
+
+			<h2>
+				Wir führen gerade einen Relaunch von
+				<?php echo $aamt_title; ?>
+				durch. In dieser Zeit steht Ihnen die Seite nicht zur Verfügung.
+			</h2>
+		</div>
+	</body>
 </html>
