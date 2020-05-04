@@ -3,7 +3,7 @@
 	/*
 		Plugin Name: AppArtig Maintenance
 		Description: Simple Maintenance Page for not logged in Users
-		Version:     1.0.1
+		Version:     1.1.0
 		Author:      AppArtig e.U.
 		Author URI:  https://www.appartig.at
 		License:     APPARTIG/AGB
