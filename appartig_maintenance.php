@@ -16,19 +16,28 @@
 	******************************************************/
 
 	defined('ABSPATH') || exit('');
-	
-	function aamt_is_valid_page() {
-		return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
-	}
 
-	if(!is_admin() && !aamt_is_valid_page()){  
-		
+	function aamt_show_maintenance_page()
+	{
 		$aamt_title = get_bloginfo('name');
 		$aamt_URL =  plugin_dir_url(__FILE__);
 		
 		require_once('template.html');
 		
 		die();
-	} 
+	}
+
+	function aamt_check_show_maintenance_page()
+	{
+		if (in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php')))
+			return;
+		
+		if (is_user_logged_in())
+			return;
+
+		aamt_show_maintenance_page();
+	}
+
+	add_action('get_header', 'aamt_check_show_maintenance_page');
 
 ?>
